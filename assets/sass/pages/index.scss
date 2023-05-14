@@ -1,0 +1,215 @@
+.card_area {
+    border: $border;
+    margin-top: 100px;
+    .card_area_content {
+        border: $border;
+        // c_card start
+        .c_card {
+            border: $border;
+            background-color: $blue_white;
+            border-radius: 8px;
+            overflow: hidden;
+            &:hover{
+                .card_img_area {
+                    .eye_and_favourite_icon_area {
+                        visibility: visible;
+                        opacity: 1;
+                        right: 12px;
+                        .eye_icon_area {
+                            i {
+                                color: $red;
+                            }
+                        }
+                        .favourite_icon_area {
+                            i {
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+            }
+            // card_img_area start
+            .card_img_area {
+                border: $border;
+                position: relative;
+                // card_img start
+                .card_img {
+                    border: $border;
+                    // background-color: red;
+                    // background: rgb(213, 223, 252);
+                    // background: linear-gradient(0deg, rgba(213, 223, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                    img {
+                        border: $border;
+                    }
+                }
+                // card_img end
+                // offer_text_area start
+                .offer_text_area {
+                    border: $border;
+                    background-color: $red;
+                    display: inline-block;
+                    padding: 3px 7px;
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                    border-radius: 2px;
+                    .offer_text {
+                        border: $border;
+                        font-size: 12px;
+                        font-family: $Poppins_Regular;
+                        color: $white;
+                        line-height: 12px;
+                        align-items: center;
+                        display: flex;
+                    }
+                }
+                // offer_text_area end
+                // eye_and_favourite_icon_area start
+                .eye_and_favourite_icon_area {
+                    border: $border;
+                    display: inline-flex;
+                    visibility: hidden;
+                    opacity: 0;
+                    gap: 7px;
+                    position: absolute;
+                    top: 12px;
+                    // right: 12px;
+                    right: -60px;
+                    transition-duration: .4s;
+                    .eye_icon_area {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        // transition-duration: .4s;
+                        i {
+                            border: $border;
+                            color: $navy;
+                            font-size: 16px;
+                            transition-duration: .4s;
+                        }
+                    }
+                    .favourite_icon_area {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        // transition-duration: .4s;
+                        i {
+                            border: $border;
+                            color: $navy;
+                            font-size: 16px;
+                            transition-duration: .4s;
+                        }
+                    }
+                }
+                // eye_and_favourite_icon_area end
+            }
+            // card_img_area end
+
+            // Product_discription_area start
+            .Product_discription_area {
+                border: $border;
+                padding: 0px 10px 10px 10px;
+                .Product_discription_area_content{
+                    background-color: $white;
+                    padding: 10px;
+                }
+                .Product_title {
+                    border: $border;
+                    .title_text {
+                        border: $border;
+                        font-family: $Poppins_Medium;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: $navy;
+                    }
+                }
+                .Product_rating_area {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    padding: 10px 0px;
+                    gap: 5px;
+                    i {
+                        border: $border;
+                        font-size: 12px;
+                        color: $yellow;
+                    }
+                }
+                .product_price_and_product_count_area {
+                    border: $border;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .product_price_area {
+                        border: $border;
+                        display: flex;
+                        gap: 10px;
+                        .current_price_area {
+                            border: $border;
+                            .current_price {
+                                border: $border;
+                                font-family: $Poppins_Medium;
+                                font-size: 13px;
+                                color: $red;
+                                .current_price_dolor {
+                                    border: $border;
+                                }
+                                .current_price_text {
+                                    border: $border;
+                                }
+                            }
+                        }
+                        .previous_price_area {
+                            border: $border;
+                            font-family: $Poppins_Medium;
+                            font-size: 13px;
+                            .previous_price {
+                                border: $border;
+                                color: $off_white;
+                                .previous_price_dolor {
+                                    border: $border;
+                                }
+                                .previous_price_text {
+                                    border: $border;
+                                }
+                            }
+                        }
+                    }
+                    .product_count_area {
+                        border: $border;
+                        font-size: 18px;
+                        font-family: $Poppins_Medium;
+
+                        align-items: center;
+                        display: inline-flex;
+
+                        .count_up_down_area {
+                            border: $border;
+                            width: 20px;
+                            height: 20px;
+                            background-color: white;
+                            justify-content: center;
+                            align-items: center;
+                            display: inline-flex;
+                            cursor: pointer;
+                            border: 1px solid #7e828f3d;
+                            transition-duration: .4s;
+                            &:hover{
+                                background-color: $red;
+                                border: 1px solid transparent;
+                               color: $white;
+                            }
+                        }
+                        .count_number {
+                            border: $border;
+                            padding: 0px 6px;
+                        }
+                    }
+                }
+            }
+            // Product_discription_area end
+        }
+        // c_card end
+    }
+}
